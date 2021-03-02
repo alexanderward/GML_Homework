@@ -1,15 +1,15 @@
 import { Users } from "../controllers/users";
 
 export class Routes {
-  public nodesController: Users = new Users();
+  public usersController: Users = new Users();
 
   public routes(app): void {
     app
       // .route("/users")
-      .get("/users/", this.nodesController.list)
-      .get("/users/:id/", this.nodesController.retrieve)
-      .post("/users/", this.nodesController.create)
-      .put("/users/:id/", this.nodesController.update)
-      .delete("/users/:id/", this.nodesController.destroy);
+      .get("/users/", this.usersController.list)
+      .get("/users/:id/", this.usersController.retrieve)
+      .post("/users/", this.usersController.create)
+      .put("/users/:id/", this.usersController.update)
+      .delete("/users/:id/", this.usersController.destroy);
   }
 }
