@@ -15,6 +15,19 @@
 | /users/\<id\>/ 	| PUT    	| Update View - updates & returns User 	|
 | /users/\<id\>/ 	| DELETE 	| Delete View - deletes user           	|
      
+User Schema
+```json
+{
+    "personaID": "<string>",
+    "firstName": "<string>",
+    "lastName": "<string>",
+    "interests: "<string[]>",
+    "point": {"type": "POINT", "coordinates": [<latitude - Float> , <longitude - Float>]}
+}
+```     
+- Example:
+
+![Alt text](example.PNG)
 
 ## Questions
 - Were you able to complete all the functionality in the time allotted?  If not, which pieces are outstanding?
